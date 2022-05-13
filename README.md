@@ -14,3 +14,7 @@ $this->db = new PDO('mysql:host=localhost;dbname=pruebaslim', "root", "admin1234
 El parametro *pruebaslim* se cambia por el nombre de la base de datos, *root* se cambia por el usuario y *admin123456* por la contraseña de acceso a la base de datos, todos estos datos proporcionados por el proveedor de hosting
 
 Recomendable instalar en la raíz del sitio (public_html o www)
+
+## Ingreso al sistema
+
+Puedes ingresar con el email de prueba *admin@mail.com* y la contraseña *admin123456* 

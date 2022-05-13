@@ -20,9 +20,11 @@ CREATE TABLE IF NOT EXISTS `news` (
   `date` timestamp NOT NULL,
   `file` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla pruebaslim.news: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `news` DISABLE KEYS */;
+/*!40000 ALTER TABLE `news` ENABLE KEYS */;
 
 -- Volcando estructura para tabla pruebaslim.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -33,9 +35,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `activated` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
--- La exportación de datos fue deseleccionada.
+-- Volcando datos para la tabla pruebaslim.users: ~1 rows (aproximadamente)
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `activated`) VALUES
+	(1, 'Admin User', 'admin@mail.com', 'cd5ea73cd58f827fa78eef7197b8ee606c99b2e6', 1);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
