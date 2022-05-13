@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 define('ABSPATH','https://'.$_SERVER['HTTP_HOST']);
 define('ABSDIR',dirname(__FILE__));
@@ -50,3 +51,4 @@ else
     }
 }
 if(!$is_ajax) include 'template/footer.php';
+ob_end_flush();
