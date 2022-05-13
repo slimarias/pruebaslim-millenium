@@ -1,0 +1,17 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #ebebeb;
+}
+.dark-bg{
+    background-color: #333333;
+}
+.btn-primary{
+    background-color: #7e5deb;
+    border-color: #a38be5;
+}
+.btn-primary:hover{
+    background-color: #a38be5;
+    border-color: #7e5deb;
+}
